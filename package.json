@@ -1,5 +1,5 @@
 {
-  "name": "minimal react-boilerplate with Jest",
+  "name": "minimal-react-boilerplate-with-enzyme-and-Jest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
