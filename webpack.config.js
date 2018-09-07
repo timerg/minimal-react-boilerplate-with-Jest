@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: ["@babel/polyfill", "./src/index.js"],
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",
@@ -28,11 +28,10 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /.tsx?$/,
-                loader: 'awesome-typescript-loader',
-                exclude: /node_modules/,
-            },
+			{
+				test: /\.css$/,
+				use: [ 'style-loader', 'css-loader' ]
+			},
         ]
     },
 
