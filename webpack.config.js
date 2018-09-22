@@ -40,7 +40,7 @@ module.exports = {
     ],
 
     devServer: {
-        host: "banacorn.com",
+        host: "localhost",
         contentBase: "./public",
         hot: true,
     },
